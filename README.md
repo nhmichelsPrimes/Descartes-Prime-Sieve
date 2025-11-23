@@ -2,9 +2,8 @@
 Deterministic Descartes-based sieve for generating prime candidates z = p₁² − 12n².
 
 
-# 📘 **README.md — Descartes Prime Sieve**
+# **README.md — Descartes Prime Sieve**
 
-```markdown
 # Descartes Prime Sieve
 A deterministic candidate generator for primes of the form  
 **z = p₁² − 12n²**, derived from integer Descartes triples and Eisenstein norms.
@@ -13,20 +12,19 @@ Descartes-basiertes Primzahlsieb (Prime Geometry Project).
 Für eine gegebene Primzahl `p₁` findet das Programm alle zulässigen Kandidaten `(p₁, p₂, z, a, b, d, e)`  
 entlang der quadratischen Form:
 
-```
+
 
 p₂ = p₁ + 4n
 z  = p₁² − 12n² ≥ 0
 z  = d² − d e + e²   (Eisenstein norm form)
 z  = a² + b²         (Gaussian form)
 
-```
 
 Alle erzeugten Kandidaten erfüllen die algebraischen Bedingungen, die notwendig sind, damit `z` *überhaupt* eine Primzahl sein kann.
 
 ---
 
-# 🚀 Purpose
+# Purpose
 
 Der **Descartes-Sieve** dient als:
 
@@ -45,13 +43,13 @@ Der Algorithmus basiert auf folgenden Identitäten:
 ### 1. Descartes Triple Relation  
 Für ein Descartes-Triple `(k₁, k₂, k₃)` gilt:
 
-```
+
 
 d = k₁ − k₂
 e = k₁ − k₃
 z = d² − d e + e²
 
-```
+
 
 Dies ist die **Eisenstein-Norm**,  
 repräsentiert durch `N(d + e ω)` im Ring `ℤ[ω]`, ω = e^{2πi/3}.
